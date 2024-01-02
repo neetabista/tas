@@ -1,0 +1,51 @@
+*
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+  list-style: none
+  text-decoration: none
+  outline: none
+  border: none
+
+.testimonils
+  .testimonils__bg-image
+    width: 100%
+    height: 500px
+    background-size: cover
+    background-position: center
+    background-repeat: no-repeat
+    position: relative
+    display: flex
+    justify-content: center
+    align-items: center 
+    &::before
+      content: ""
+      position: absolute
+      top: 0
+      left: 0
+      width: 100%
+      height: 100%
+      background-color: rgba(20, 21, 30, 0.9)
+    .testimonils__content
+        z-index: 1
+        padding: 2rem 3rem
+        border: 10px solid hsla(0, 0%, 93%, 0.2)
+        max-width: 700px
+        position: relative
+        margin: 0 30px
+        display: flex
+        flex-direction: column
+        gap: 10px  
+        i
+          color: #d24e1a
+          font-size: 40px 
+        p
+          font-size: 14px
+          line-height: 24px
+          font-weight: 300
+          color: #eee
+        .testimonils__name
+          h4 
+            color: #eee
+          p 
+            color: #d24e1a
