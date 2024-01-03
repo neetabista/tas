@@ -1,7 +1,7 @@
 import React from "react";
-// import { projects } from "../../../../data/data";
+import { projects } from "../../../../data/data";
 import { Link } from "react-router-dom";
-import CustomCard from "../../../../components/common/CustomCard";
+import CustomCard from "../../../../components/common/CustomCard/CustomCard";
 
 const Projects = () => {
   return (
@@ -33,7 +33,8 @@ const Projects = () => {
           </div>
 
           <div className="project__right--content">
-            <CustomCard />
+            {projects?.length > 0 &&
+              projects?.map((project, index) => <CustomCard data={project} />)}
           </div>
         </div>
       </div>
