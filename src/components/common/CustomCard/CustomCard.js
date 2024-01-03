@@ -1,5 +1,4 @@
 import React from "react";
-// import { projects } from "../../data/data";
 import { Link } from "react-router-dom";
 
 const CustomCard = ({ data }) => {

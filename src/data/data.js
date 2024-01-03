@@ -61,7 +61,7 @@ export const blogs = [
     slug: "blog-3",
   },
 ];
-export const testimonial = [
+export const testimonials = [
   {
     description:
       "Hiday Motors needed to build a brand new 28,000 sf facility that would both meet our needs and comply with GMs standards - which seemed daunting, to say the least. Industify alleviated all of our concerns and communicated with us every step of the way. We have received dozens of compliments from our customers, and our employees love the new store!",

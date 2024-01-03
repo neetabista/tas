@@ -6,7 +6,7 @@ const Blog = () => {
   return (
     <div className="blog">
       <div
-        className="blog__image"
+        className="blog__bg--image"
         style={{ backgroundImage: 'url("/images/map.png")' }}
       >
         <div className="wrapper">
@@ -30,16 +30,15 @@ const Blog = () => {
                 </div>
                 <div className="blog__title--section">
                   <p className="title-header">
-                    By <Link to="">Frenify</Link> -In
+                    By <Link to="">Frenify</Link> -In{" "}
                     <Link to="">Australia</Link>
                   </p>
+
                   <Link to="">
                     <div className="blog__title">{blog.title}</div>
                   </Link>
                   <Link to="">
-                    <button variant="primary" className="title-footer">
-                      read more
-                    </button>
+                    <button className="title-footer">read more</button>
                   </Link>
                 </div>
               </div>
