@@ -1,8 +1,8 @@
-import React from "react";
-import { projects } from "../../../../data/data";
-import { Link } from "react-router-dom";
-import CustomCard from "../../../../components/common/CustomCard/CustomCard";
-import Button from "../../../../components/common/button/Button";
+import React from 'react'
+import { projects } from '../../../../data/data'
+import { Link } from 'react-router-dom'
+import CustomCard from '../../../../components/common/CustomCard/CustomCard'
+import Button from '../../../../components/common/button/Button'
 const Projects = () => {
   return (
     <>
@@ -27,9 +27,6 @@ const Projects = () => {
               <div className="button">
                 <Link to="">
                   <Button btnData="view all projects" />
-                  {/* <a href="#" className="view-all-btn">
-                  view all projects
-                </a> */}
                 </Link>
               </div>
             </div>
@@ -42,7 +39,7 @@ const Projects = () => {
         </div>
       </div>
     </>
-  );
-};
+  )
+}
 
-export default Projects;
+export default Projects

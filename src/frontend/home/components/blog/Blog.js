@@ -1,7 +1,7 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import { blogs } from "../../../../data/data";
-import Button from "../../../../components/common/button/Button";
+import React from 'react'
+import { Link } from 'react-router-dom'
+import { blogs } from '../../../../data/data'
+import Button from '../../../../components/common/button/Button'
 
 const Blog = () => {
   return (
@@ -31,7 +31,7 @@ const Blog = () => {
                 </div>
                 <div className="blog__title--section">
                   <p className="title-header">
-                    By <Link to="">Frenify</Link> -In{" "}
+                    By <Link to="">Frenify</Link> -In{' '}
                     <Link to="">Australia</Link>
                   </p>
 
@@ -40,7 +40,6 @@ const Blog = () => {
                   </Link>
                   <Link to="">
                     <Button btnData="read more" />
-                    {/* <button className="title-footer">read more</button> */}
                   </Link>
                 </div>
               </div>
@@ -49,7 +48,7 @@ const Blog = () => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Blog;
+export default Blog
