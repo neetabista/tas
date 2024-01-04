@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { blogs } from "../../../../data/data";
+import Button from "../../../../components/common/button/Button";
 
 const Blog = () => {
   return (
@@ -38,7 +39,8 @@ const Blog = () => {
                     <div className="blog__title">{blog.title}</div>
                   </Link>
                   <Link to="">
-                    <button className="title-footer">read more</button>
+                    <Button btnData="read more" />
+                    {/* <button className="title-footer">read more</button> */}
                   </Link>
                 </div>
               </div>

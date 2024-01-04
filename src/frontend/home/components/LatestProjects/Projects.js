@@ -2,7 +2,7 @@ import React from "react";
 import { projects } from "../../../../data/data";
 import { Link } from "react-router-dom";
 import CustomCard from "../../../../components/common/CustomCard/CustomCard";
-
+import Button from "../../../../components/common/button/Button";
 const Projects = () => {
   return (
     <>
@@ -25,9 +25,12 @@ const Projects = () => {
                 in a collaborative environment.
               </p>
               <div className="button">
-                <a href="#" className="view-all-btn">
+                <Link to="">
+                  <Button btnData="view all projects" />
+                  {/* <a href="#" className="view-all-btn">
                   view all projects
-                </a>
+                </a> */}
+                </Link>
               </div>
             </div>
           </div>
