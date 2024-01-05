@@ -1,5 +1,6 @@
 import React from 'react'
-import { Route, Routes } from 'react-router-dom'
+import { Routes, Route } from 'react-router-dom'
+
 import BlogDetails from '../frontend/blog detail/BlogDetails'
 import Home from '../frontend/home'
 
