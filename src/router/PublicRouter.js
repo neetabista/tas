@@ -8,10 +8,11 @@ const PublicRouter = () => {
     <>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/detail" element={<BlogDetails />} />
+        <Route path="/detail/:id" element={<BlogDetails />} />
       </Routes>
     </>
   )
 }
+
 
 export default PublicRouter

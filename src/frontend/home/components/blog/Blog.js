@@ -2,7 +2,6 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { blogs } from '../../../../data/data'
 import Button from '../../../../components/common/button/Button'
-import BlogDetails from '../../../blog detail/BlogDetails'
 
 const Blog = () => {
   return (
@@ -36,7 +35,7 @@ const Blog = () => {
                     <Link to="">Australia</Link>
                   </p>
 
-                  <Link to={`/blog-details/${blog.id}`}>
+                  <Link to={`/detail/${blog.id}`}>
                     <div className="blog__title">{blog.title}</div>
                   </Link>
                   <Link to="">

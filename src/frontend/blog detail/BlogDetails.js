@@ -81,7 +81,7 @@ const BlogDetails = () => {
           <div className="col-lg-4">
             <div className="rightside">
               <div className="rightside__img">
-                <img src="/public/images/img-8.jpg" alt="" />
+                <img src="/images/img-8.jpg" alt="" />
               </div>
             </div>
           </div>
