@@ -3,18 +3,23 @@ import {
   LatestProjects,
   Testimonial,
   ThoughtsAndExperiments,
-  Header,
-  Footer,
+  Banner,
+  About,
+  Overview,
 } from './components'
 
 const Home = () => {
   return (
     <>
-      <Header />
+      <Banner />
+      <About />
+
       <Testimonial />
+
       <LatestProjects />
+      <Overview />
+
       <ThoughtsAndExperiments />
-      <Footer />
     </>
   )
 }

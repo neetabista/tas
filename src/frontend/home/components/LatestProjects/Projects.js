@@ -3,6 +3,8 @@ import { projects } from '../../../../data/data'
 import { Link } from 'react-router-dom'
 import CustomCard from '../../../../components/common/CustomCard/CustomCard'
 import Button from '../../../../components/common/button/Button'
+import { Container, Row, Col } from 'react-bootstrap'
+
 const Projects = () => {
   return (
     <>
@@ -31,7 +33,6 @@ const Projects = () => {
               </div>
             </div>
           </div>
-
           <div className="project__right--content">
             {projects?.length > 0 &&
               projects?.map((project, index) => <CustomCard data={project} />)}
