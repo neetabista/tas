@@ -1,5 +1,6 @@
 import React from 'react'
 import Button from '../../../../components/common/button/Button'
+import { Container } from 'react-bootstrap'
 
 const Overview = () => {
   return (
@@ -9,7 +10,7 @@ const Overview = () => {
           className="overview__bg--image"
           style={{ backgroundImage: 'url("/images/Group-1.jpg")' }}
         >
-          <div className="container">
+          <Container>
             <div className="overview__content">
               <div className="overview__subtitle">
                 Providing the Best Sustainable Heating Solution With
@@ -22,7 +23,7 @@ const Overview = () => {
               </div>
               <Button btnData="Explore More" />
             </div>
-          </div>
+          </Container>
         </div>
       </div>
     </>
