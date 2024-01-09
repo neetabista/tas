@@ -12,13 +12,13 @@ const Blog = () => {
         style={{ backgroundImage: 'url("/images/map.png")' }}
       >
         <Container>
-          <h3>Thoughts & Experiments</h3>
+          <h3 className="title">Thoughts & Experiments</h3>
 
           <div className="blog__list">
             <Row>
               {blogs.map((blog, index) => (
                 <Col lg={4}>
-                  <div className="blog__card" key={index}>
+                  <div className="blog__card">
                     <Link to="">
                       <div
                         className="blog__img"

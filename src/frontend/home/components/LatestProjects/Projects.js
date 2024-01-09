@@ -10,12 +10,12 @@ const Projects = () => {
     <>
       <div className="project">
         <div className="project__content">
-          <Container fluid>
+          <Container fluid style={{ padding: 0 }}>
             <Row>
               <Col lg={4}>
                 <div className="project__left--content">
                   <div className="project__left__sticky--section">
-                    <h3>Our latest projects.</h3>
+                    <h3 className="title">Our latest projects.</h3>
                     <p>
                       At Industify Company, we rely on honesty, discipline and
                       hard work and believe our success can be attributed to

@@ -43,7 +43,6 @@
     display: flex
     justify-content: space-between
     align-items: center
-    padding: 1rem 0
     .header__logo
       max-width: 75px
       height: 50px
@@ -68,14 +67,51 @@
           text-transform: uppercase
           font-weight: 500
           letter-spacing: 0.5px
-          &::hover
-          a
-            color: #dd3333  
+          display: flex
+          justify-content: center
+          align-items: center
+          padding: 1rem 0
 
-          &.menu__link--acitve
-            color: #dd3333  
+          &:hover
+            a
+              color: #dd3333 
+            .sub-menu
+              display: block
+           
+          i
+            color: #eee
+            font-size: 24px
+
+        
           a
             color:#eee
+            // display: flex
+          .sub-menu
+            position: absolute
+            margin: 0
+            width: 260px
+            background-color: #111
+            top: 100%
+            // left: -30px
+            padding: 20px 0
+            z-index: 55
+            transition: all .3s ease
+            display: none
+            &::after
+              content: ""
+              position: absolute
+              top: 100%
+              left: 0
+              border-right: 260px solid transparent
+              border-top: 20px solid #111
+            a
+              color: #eee  
+              
+            .sub-menu__item
+              font-size: 13px
+              text-transform: capitalize
+              padding: 0 30px
+              margin: 5px 0 10px   
     .toll-free
       background-color:#dd3333
       padding: 0.6rem 1rem
@@ -86,6 +122,14 @@
       display: flex
       justify-content: center
       align-items: center
+      position: relative
+      &::before
+        position: absolute
+        content:""
+        left: -23px
+        top: -2px
+        border-top: 49px solid transparent
+        border-right: 23px solid #dd3333
       & p
         margin-bottom: 0
 

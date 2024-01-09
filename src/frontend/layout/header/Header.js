@@ -45,15 +45,57 @@ const Header = () => {
                 </li>
                 <li className="menu__item">
                   <Link to="">about us</Link>
+                  <i class="ri-arrow-drop-down-line"></i>
+                  <ul className="sub-menu">
+                    <li className="sub-menu__item">
+                      <Link to="">About TAS</Link>
+                    </li>
+                    <li className="sub-menu__item">
+                      <Link to="">our associations</Link>
+                    </li>
+                    <li className="sub-menu__item">
+                      <Link to="">sister concern</Link>
+                    </li>
+                  </ul>
                 </li>
                 <li className="menu__item">
                   <Link to="">services</Link>
                 </li>
                 <li className="menu__item">
                   <Link to="">solution</Link>
+                  <i class="ri-arrow-drop-down-line"></i>
+                  <ul className="sub-menu">
+                    <li className="sub-menu__item">
+                      <Link to="">Hospitality Solutions</Link>
+                    </li>
+                    <li className="sub-menu__item">
+                      <Link to="">Industrial Solutions</Link>
+                    </li>
+                    <li className="sub-menu__item">
+                      <Link to="">Residential Solutions</Link>
+                    </li>
+                  </ul>
                 </li>
                 <li className="menu__item">
                   <Link to="">our products</Link>
+                  <i class="ri-arrow-drop-down-line"></i>
+                  <ul className="sub-menu">
+                    <li className="sub-menu__item">
+                      <Link to="">Thermax Boilers</Link>
+                    </li>
+                    <li className="sub-menu__item">
+                      <Link to="">Water Pumps</Link>
+                    </li>
+                    <li className="sub-menu__item">
+                      <Link to="">Compressed Air System</Link>
+                    </li>
+                    <li className="sub-menu__item">
+                      <Link to="">Fire Fighting System</Link>
+                    </li>
+                    <li className="sub-menu__item">
+                      <Link to="">Oxygen & Nitrogen Generators</Link>
+                    </li>
+                  </ul>
                 </li>
                 <li className="menu__item">
                   <Link to="">contact us</Link>

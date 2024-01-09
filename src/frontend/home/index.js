@@ -2,7 +2,7 @@ import React from 'react'
 import {
   LatestProjects,
   Testimonial,
-  ThoughtsAndExperiments,
+  Blog,
   Banner,
   About,
   Overview,
@@ -19,7 +19,7 @@ const Home = () => {
       <LatestProjects />
       <Overview />
 
-      <ThoughtsAndExperiments />
+      <Blog />
     </>
   )
 }

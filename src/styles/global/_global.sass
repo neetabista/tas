@@ -12,4 +12,29 @@
 .wrapper
   max-width: 1320px
   padding: 0 30px
-  margin:  0 auto   
+  margin:  0 auto
+.title
+  font-size: 50px 
+  font-weight: 300 
+  line-height: 1 
+  letter-spacing: 0 
+  color: #14141c 
+  position: relative 
+  margin-bottom: 2rem
+  &::after
+    content: ""
+    position: absolute 
+    bottom: -15px 
+    left: 0 
+    width: 150px 
+    height: 1px
+    background-color: #b9b7b7
+  &::before
+    content: ""
+    position: absolute
+    bottom: -16px
+    width: 50px 
+    height: 4px
+    left: 50px
+    background-color: #d24e1a
+    z-index: 1    

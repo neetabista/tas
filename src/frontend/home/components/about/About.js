@@ -2,6 +2,7 @@ import React from 'react'
 import Button from '../../../../components/common/button/Button'
 import { Container, Row, Col } from 'react-bootstrap'
 
+
 const About = () => {
   return (
     <>
@@ -17,7 +18,7 @@ const About = () => {
             </Col>
             <Col lg={6}>
               <div className="about__content">
-                <h3>About Us</h3>
+                <h3 className="title">About Us</h3>
                 <p className="about__text">
                   Technical Associates Services (TAS) aim to provide cost
                   effective engineering solutions to people and industries in
