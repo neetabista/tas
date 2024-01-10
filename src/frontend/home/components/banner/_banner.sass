@@ -1,3 +1,10 @@
+@keyframes categoryAnimation
+   0%
+      transform: translateY(70px)
+              
+   100%
+     transform: translateY(0)
+
 .banner
   .banner__image
     width: 100%
@@ -26,12 +33,6 @@
           text-transform: uppercase
           color: #fff
           animation: category 1s
-          @keyframes category
-            0%
-              transform: translateY(-20px)
-              
-            100%
-              transform: translateY(0px)
               
 
         .banner__title
@@ -70,10 +71,15 @@
       padding: 1.5rem
       background-color: #dd3333
   .swiper-slide-active
-    .category
-      color: #000
-      animation: category 1s !important
-      animation-delay: 0.3s !important
+    .banner__title--holder
+      .title__holder--content
+        .category
+            opacity: 1
+            animation-fill-mode: both
+            animation-iteration-count: 1
+            animation-duration: 1s
+            animation-delay: 0.3s
+            animation-name: categoryAnimation
       
 
             
