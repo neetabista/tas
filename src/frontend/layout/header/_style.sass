@@ -51,6 +51,9 @@
         height: 100%
         object-fit: contain
     .header__menu
+      display: block
+      @media ( max-width:1130px )
+        display: none
       & ul
         margin-bottom: 0
         padding-left: 0
@@ -85,7 +88,6 @@
         
           a
             color:#eee
-            // display: flex
           .sub-menu
             position: absolute
             margin: 0
@@ -123,6 +125,9 @@
       justify-content: center
       align-items: center
       position: relative
+      display: block
+      @media ( max-width: 1130px )
+        display: none
       &::before
         position: absolute
         content:""
@@ -132,6 +137,22 @@
         border-right: 23px solid #dd3333
       & p
         margin-bottom: 0
+    .side-menu
+      display: none
+      cursor: pointer
+      color: #eee
+      font-size: 24px
+      @media ( max-width: 1130px )
+        display: block
+             
+button
+  &:hover
+    background-color: unset !important
+.offcanvas.offcanvas-start
+  // background-color: #16161b
+      
+
+  
 
             
        

@@ -61,7 +61,7 @@ const Footer = () => {
         <div className="footer__bottom">
           <div className="wrapper">
             <div className="bottom-list">
-              <div className="bottom-item">Copyright © 2023 TAS</div>
+              <div className="bottom-item">Copyright &copy; 2023 TAS</div>
               <div className="bottom-item">Technical Partner: Encode Tree</div>
             </div>
           </div>

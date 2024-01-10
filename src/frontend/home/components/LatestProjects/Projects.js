@@ -11,7 +11,7 @@ const Projects = () => {
       <div className="project">
         <div className="project__content">
           <Container fluid style={{ padding: 0 }}>
-            <Row>
+            <Row mx-0>
               <Col lg={4}>
                 <div className="project__left--content">
                   <div className="project__left__sticky--section">
@@ -37,7 +37,7 @@ const Projects = () => {
                   </div>
                 </div>
               </Col>
-              <Col lg={8}>
+              <Col lg={8} py-0>
                 <div className="project__right--content">
                   {projects?.length > 0 &&
                     projects?.map((project, index) => (
