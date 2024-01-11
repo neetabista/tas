@@ -2,7 +2,7 @@ import React from 'react'
 import { projects } from '../../../../data/data'
 import { Link } from 'react-router-dom'
 import CustomCard from '../../../../components/common/CustomCard/CustomCard'
-import Button from '../../../../components/common/button/Button'
+import Button from '../../../../components/common/button/CustomButton'
 import { Container, Row, Col } from 'react-bootstrap'
 
 const Projects = () => {

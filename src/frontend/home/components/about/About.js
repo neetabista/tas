@@ -1,7 +1,6 @@
 import React from 'react'
-import Button from '../../../../components/common/button/Button'
+import Button from '../../../../components/common/button/CustomButton'
 import { Container, Row, Col } from 'react-bootstrap'
-
 
 const About = () => {
   return (

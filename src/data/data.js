@@ -60,6 +60,25 @@ export const blogs = [
     title: 'CITB appoints Peter Lauener as new chairman',
     slug: 'blog-3',
   },
+
+  {
+    id: 1,
+    day: 2,
+    month: 'Jan',
+    year: 2024,
+    image: '/images/img-5.jpg',
+    title: 'Laing O’Rourke: Moves, projects and bids',
+    slug: 'blog-1',
+  },
+  {
+    id: 2,
+    day: 10,
+    month: 'Fab',
+    year: 2024,
+    image: '/images/img-6.jpg',
+    title: 'How to turn Victorian gasholders apartments',
+    slug: 'blog-2',
+  },
 ]
 export const testimonials = [
   {

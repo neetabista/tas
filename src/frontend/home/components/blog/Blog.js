@@ -1,8 +1,16 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { blogs } from '../../../../data/data'
-import Button from '../../../../components/common/button/Button'
+import Button from '../../../../components/common/button/CustomButton'
 import { Container, Row, Col } from 'react-bootstrap'
+import { Swiper, SwiperSlide } from 'swiper/react'
+// Import Swiper styles
+import 'swiper/css'
+import 'swiper/css/pagination'
+import 'swiper/css/navigation'
+
+// import required modules
+import { Navigation, Pagination } from 'swiper/modules'
 
 const Blog = () => {
   return (
@@ -15,9 +23,32 @@ const Blog = () => {
           <h3 className="title">Thoughts & Experiments</h3>
 
           <div className="blog__list">
-            <Row>
+            <Swiper
+              slidesPerView={1}
+              spaceBetween={10}
+              pagination={{
+                clickable: true,
+              }}
+              // navigation={true}
+              breakpoints={{
+                640: {
+                  slidesPerView: 1,
+                  spaceBetween: 20,
+                },
+                768: {
+                  slidesPerView: 2,
+                  spaceBetween: 40,
+                },
+                1024: {
+                  slidesPerView: 3,
+                  spaceBetween: 50,
+                },
+              }}
+              modules={[Navigation, Pagination]}
+              className="mySwiper"
+            >
               {blogs.map((blog, index) => (
-                <Col lg={4}>
+                <SwiperSlide>
                   <div className="blog__card">
                     <Link to="">
                       <div
@@ -45,9 +76,9 @@ const Blog = () => {
                       </Link>
                     </div>
                   </div>
-                </Col>
+                </SwiperSlide>
               ))}
-            </Row>
+            </Swiper>
           </div>
         </Container>
       </div>
