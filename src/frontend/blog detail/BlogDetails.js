@@ -1,10 +1,11 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { Container, Row, Col } from 'react-bootstrap'
 
 const BlogDetails = () => {
   return (
     <>
-      <div className="container">
+      <Container>
         <div className="title__holder">
           <div className="title__holder--title">
             <h3>Blog Single Page 1</h3>
@@ -13,25 +14,26 @@ const BlogDetails = () => {
                 <li className="breadcrumbs__item">
                   <Link to="">Home</Link>
                 </li>
-                <li className="separator"></li>
+                <li className="separator">
+                  <span></span>
+                </li>
                 <li className="breadcrumbs__item">
                   <Link to="">Blog</Link>
                 </li>
-                <li className="separator"></li>
+                <li className="separator">
+                  <span></span>
+                </li>
                 <li className="breadcrumbs__current">Blog Single Page 1</li>
               </ul>
             </div>
           </div>
         </div>
-      </div>
-
-      <div className="container">
-        <div className="row">
-          <div className="col-lg-8">
+      </Container>
+      <Container>
+        <Row>
+          <Col lg={8}>
             <div className="leftside">
-              <div className="leftside__img">
-                <img src="/images/img-5.jpg" alt="" />
-              </div>
+              <img className="leftside__img" src="/images/img-5.jpg" alt="" />
               <div className="leftside__description--holder">
                 <h5>
                   Seymour Whyte employs 475 people and generated revenue of
@@ -77,16 +79,33 @@ const BlogDetails = () => {
                 </p>
               </div>
             </div>
-          </div>
-          <div className="col-lg-4">
+          </Col>
+          <Col lg={4}>
             <div className="rightside">
-              <div className="rightside__img">
-                <img src="/images/img-8.jpg" alt="" />
+              <div className="card">
+                <h2>related feed</h2>
+                <div className="card__content">
+                  <img
+                    className="card"
+                    src="/public/images/img-2.jpg"
+                    alt="blog"
+                  />
+                  <div className="card__title">
+                    <p>
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Voluptate, rem voluptates.
+                    </p>
+                    <div className="date">
+                      <i class="ri-calendar-2-line"></i>
+                      <span>09 Oct, 2023</span>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-        </div>
-      </div>
+          </Col>
+        </Row>
+      </Container>
     </>
   )
 }

@@ -2,8 +2,9 @@ import React from 'react'
 import { projects } from '../../../../data/data'
 import { Link } from 'react-router-dom'
 import CustomCard from '../../../../components/common/CustomCard/CustomCard'
-import Button from '../../../../components/common/button/CustomButton'
+
 import { Container, Row, Col } from 'react-bootstrap'
+import CustomButton from '../../../../components/common/button/CustomButton'
 
 const Projects = () => {
   return (
@@ -15,7 +16,7 @@ const Projects = () => {
               <Col lg={4}>
                 <div className="project__left--content">
                   <div className="project__left__sticky--section">
-                    <h3 className="title">Our latest projects.</h3>
+                    <h3 className="title">Our latest projects</h3>
                     <p>
                       At Industify Company, we rely on honesty, discipline and
                       hard work and believe our success can be attributed to
@@ -31,7 +32,7 @@ const Projects = () => {
                     </p>
                     <div className="button">
                       <Link to="">
-                        <Button btnData="view all projects" />
+                        <CustomButton btnData="view all projects" />
                       </Link>
                     </div>
                   </div>

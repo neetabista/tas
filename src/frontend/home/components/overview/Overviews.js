@@ -1,6 +1,6 @@
 import React from 'react'
-import Button from '../../../../components/common/button/CustomButton'
 import { Container } from 'react-bootstrap'
+import CustomButton from '../../../../components/common/button/CustomButton'
 
 const Overview = () => {
   return (
@@ -21,7 +21,7 @@ const Overview = () => {
                 the best Domestic and Industrial heating solution and boilers in
                 Nepal
               </div>
-              <Button btnData="Explore More" />
+              <CustomButton btnData="Explore More" />
             </div>
           </Container>
         </div>

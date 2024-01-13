@@ -1,31 +1,115 @@
 .title__holder
+  margin: 2rem 0
   .title__holder--title
-    margin: 4rem 0
+    padding: 3rem 0
+    position: relative
+    &::before
+      left: 0
+      position: absolute
+      content: ""
+      bottom: 13px
+      height: 6px
+      width: 150px
+      background-color: #eee
+      border-radius: 10px
+    &::after
+      left: 0
+      position: absolute
+      content: ""
+      bottom: 0
+      height: 6px
+      width: 70px
+      background-color: #eee  
+      
     .breadcrumbs
       ul
         margin-bottom: 0
         padding-left: 0
       .breadcrumbs__list
         display: flex
-        gap: 1rem
+        font-size: 14px
         a
-          color:#0c0606
+          color:#666
         .breadcrumbs__item
-          font-weight: 600  
+          font-weight: 600
+          transition: 0.3s ease
+          &:hover
+            a
+              color: #dd3333
+        .separator
+          span
+            width: 33px
+            height: 24px
+            display: block
+            position: relative
+            &::before
+              width: 9px
+              height: 2px
+              display: block
+              content: ""
+              position: absolute
+              background-color: #ddd
+              left: 13px
+              top: 14px
+              transform: rotate(135deg)
+            &::after
+              width: 9px
+              height: 2px
+              display: block
+              content: ""
+              position: absolute
+              background-color: #ddd
+              left: 13px
+              top: 8px
+              transform: rotate(45deg)  
+
 
 .leftside
   .leftside__img
     width: 100%
+    height: auto
     padding-bottom: 1rem
-    img
+  .leftside__description--holder
+    h5
+      font-size: 20px
+    & p
+      padding: 0
+      line-height: 1.7
+      letter-spacing: 0
+      margin: 0 0 20px
+      color: #777
+    ul
+      margin: 30px
+      li
+        list-style: disc outside
+        margin-bottom: 5px
+        color: #777
+    & blockquote
+      border-left: 3px solid #6fbf71
+      font-style: italic
+      margin: 10px 0 23px
+      padding: 19px 20px 20px
       width: 100%
+      background-color: #e9eff4
+      line-height: 1.7
+      color: #777
+      font-size: 20px
+      font-family: Lora
+      font-weight: 400
+      border-radius: 5px    
+
+   
       
       
 .rightside
-  .rightside__img
-    width: 100%
-    img
-      width: 100%
+  .card
+    background-color: #111724
+    padding: 30px
+  
+   
+      
+
+   
      
         
 

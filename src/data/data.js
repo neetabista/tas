@@ -62,7 +62,7 @@ export const blogs = [
   },
 
   {
-    id: 1,
+    id: 4,
     day: 2,
     month: 'Jan',
     year: 2024,
@@ -71,7 +71,7 @@ export const blogs = [
     slug: 'blog-1',
   },
   {
-    id: 2,
+    id: 5,
     day: 10,
     month: 'Fab',
     year: 2024,

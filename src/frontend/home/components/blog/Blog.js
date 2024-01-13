@@ -1,16 +1,17 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { blogs } from '../../../../data/data'
-import Button from '../../../../components/common/button/CustomButton'
-import { Container, Row, Col } from 'react-bootstrap'
+import { Container } from 'react-bootstrap'
 import { Swiper, SwiperSlide } from 'swiper/react'
+import CustomButton from '../../../../components/common/button/CustomButton'
+
 // Import Swiper styles
 import 'swiper/css'
 import 'swiper/css/pagination'
 import 'swiper/css/navigation'
 
 // import required modules
-import { Navigation, Pagination } from 'swiper/modules'
+import { Navigation, Autoplay } from 'swiper/modules'
 
 const Blog = () => {
   return (
@@ -26,10 +27,10 @@ const Blog = () => {
             <Swiper
               slidesPerView={1}
               spaceBetween={10}
-              pagination={{
-                clickable: true,
+              autoplay={{
+                delay: 3000,
+                disableOnInteraction: false,
               }}
-              // navigation={true}
               breakpoints={{
                 640: {
                   slidesPerView: 1,
@@ -44,13 +45,13 @@ const Blog = () => {
                   spaceBetween: 50,
                 },
               }}
-              modules={[Navigation, Pagination]}
+              modules={[Navigation, Autoplay]}
               className="mySwiper"
             >
               {blogs.map((blog, index) => (
                 <SwiperSlide>
                   <div className="blog__card">
-                    <Link to="">
+                    <Link to={`/detail/${blog.id}`}>
                       <div
                         className="blog__img"
                         style={{ backgroundImage: `url(${blog.image})` }}
@@ -72,7 +73,7 @@ const Blog = () => {
                         <div className="blog__title">{blog.title}</div>
                       </Link>
                       <Link to="">
-                        <Button btnData="read more" />
+                        <CustomButton btnData="read more" />
                       </Link>
                     </div>
                   </div>

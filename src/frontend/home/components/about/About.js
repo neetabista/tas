@@ -1,5 +1,5 @@
 import React from 'react'
-import Button from '../../../../components/common/button/CustomButton'
+import CustomButton from '../../../../components/common/button/CustomButton'
 import { Container, Row, Col } from 'react-bootstrap'
 
 const About = () => {
@@ -34,7 +34,7 @@ const About = () => {
                   solutions, PSA type Oxygen & Nitrogen Generators, Modular
                   Operation Theatres, Fire Fighting Systems and Flowmeters.
                 </p>
-                <Button btnData="Learn More" />
+                <CustomButton btnData="Learn More" />
               </div>
             </Col>
           </Row>

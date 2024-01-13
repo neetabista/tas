@@ -1,5 +1,5 @@
 import React from 'react'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import Offcanvas from 'react-bootstrap/Offcanvas'
 const Header = () => {
@@ -7,6 +7,7 @@ const Header = () => {
 
   const handleClose = () => setShow(false)
   const handleShow = () => setShow(true)
+
   return (
     <>
       <div className="header-section">
@@ -45,7 +46,9 @@ const Header = () => {
         <div className="wrapper">
           <div className="header">
             <div className="header__logo">
-              <img src="/images/logo.png" alt="logo" />
+              <Link to="/">
+                <img src="/images/logo.png" alt="logo" />
+              </Link>
             </div>
             <div className="header__menu">
               <ul className="menu__list">
@@ -107,7 +110,7 @@ const Header = () => {
                   </ul>
                 </li>
                 <li className="menu__item">
-                  <Link to="">contact us</Link>
+                  <Link to="/contact">contact us</Link>
                 </li>
               </ul>
             </div>
@@ -176,6 +179,19 @@ const Header = () => {
                     <li className="sub-menu__item">
                       <Link to="">Thermax Boilers</Link>
                     </li>
+                    <li className="sub-menu__item">
+                      <Link to="">Water Pumps</Link>
+                    </li>
+                    <li className="sub-menu__item">
+                      <Link to="">Compressed Air System</Link>
+                    </li>
+                    <li className="sub-menu__item">
+                      <Link to="">Fire Fighting System</Link>
+                    </li>
+                    <li className="sub-menu__item">
+                      <Link to="">Oxygen & Nitrogen Generators</Link>
+                    </li>
+
                     <li className="sub-menu__item">
                       <Link to="">Water Pumps</Link>
                     </li>

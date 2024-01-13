@@ -41,15 +41,33 @@
           background-size: cover
           background-position: center
           background-repeat: no-repeat
+          position: relative
           
           .time
-            width:70px
-            padding: 2px 0
-            background-color:#dd3333
-            display: flex
-            justify-content: center
-            align-items: center
-            flex-direction: column
+            position: absolute
+            z-index: 15
+            padding: 19px 18px 22px
+            max-width: 100%
+            width: 80px
+            &::before
+              position: absolute
+              content: ""
+              left: 0
+              bottom: 0
+              border-top: 15px solid #d24e1a
+              border-right: 80px solid transparent
+              z-index: -1
+            &::after
+              position: absolute
+              content: ""
+              top: 0
+              left: 0
+              bottom: 15px
+              right: 0
+              background-color: #d24e1a
+              z-index: -1
+ 
+                      
             h4
               font-size: 24px
               color: #fff
@@ -81,12 +99,7 @@
             transition: 0.3s ease
             &:hover
               color: #dd3333
-         
-.swiper-wrapper
-  margin-bottom: 2rem       
-              
-.swiper-pagination-bullet
-  background-color:#dd3333 !important         
+     
       
 
 
