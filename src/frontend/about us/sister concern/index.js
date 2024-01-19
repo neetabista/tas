@@ -2,30 +2,12 @@ import React from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 import CustomTitle from '../../../components/common/CustomTitle'
+import CustomBreadcrumb from '../../../components/common/CustomBreadcrumb'
 
 const SisterConcern = () => {
   return (
     <>
-      <Container>
-        <div className="title__holder">
-          <div className="title__holder--title">
-            <h3>Sister Concern</h3>
-            <div className="breadcrumbs">
-              <ul className="breadcrumbs__list">
-                <li className="breadcrumbs__item">
-                  <Link to="">Home</Link>
-                </li>
-                <li className="separator">
-                  <span></span>
-                </li>
-                <li className="breadcrumbs__item">
-                  <Link to="">Sister Concern</Link>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </Container>
+      <CustomBreadcrumb title="Sister Concern" subtitle="Sister Concern" />
 
       <div className="sister-concern">
         <div className="block">

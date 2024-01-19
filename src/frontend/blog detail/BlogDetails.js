@@ -1,34 +1,13 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { Container, Row, Col } from 'react-bootstrap'
+import CustomBreadcrumb from '../../components/common/CustomBreadcrumb'
 
 const BlogDetails = () => {
   return (
     <>
-      <Container>
-        <div className="title__holder">
-          <div className="title__holder--title">
-            <h3>Blog Single Page 1</h3>
-            <div className="breadcrumbs">
-              <ul className="breadcrumbs__list">
-                <li className="breadcrumbs__item">
-                  <Link to="">Home</Link>
-                </li>
-                <li className="separator">
-                  <span></span>
-                </li>
-                <li className="breadcrumbs__item">
-                  <Link to="">Blog</Link>
-                </li>
-                <li className="separator">
-                  <span></span>
-                </li>
-                <li className="breadcrumbs__current">Blog Single Page 1</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </Container>
+      <CustomBreadcrumb title="Blog Single Page 1" subtitle="Blog" />
+
       <Container>
         <Row>
           <Col lg={8}>

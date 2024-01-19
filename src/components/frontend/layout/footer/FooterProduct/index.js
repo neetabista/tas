@@ -1,10 +1,10 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-const FooterProduct = ({ data, index }) => {
+const FooterProduct = ({ data }) => {
   return (
     <>
-      <li className="item" key={index}>
+      <li className="item">
         <Link to={data.slug}>{data.title}</Link>
       </li>
     </>

@@ -1,10 +1,10 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-const CustomCard = ({ data, index }) => {
+const CustomCard = ({ data }) => {
   return (
     <>
-      <div className="card" key={index}>
+      <div className="card">
         <img className="card__image" src={data.image} alt={data.title} />
         <div className="card__info">
           <Link to="">

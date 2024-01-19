@@ -46,7 +46,7 @@ const Projects = () => {
                 <div className="project__right--content">
                   {projects?.length > 0 &&
                     projects?.map((project, index) => (
-                      <CustomCard data={project} index={index} />
+                      <CustomCard data={project} key={index} />
                     ))}
                 </div>
               </Col>

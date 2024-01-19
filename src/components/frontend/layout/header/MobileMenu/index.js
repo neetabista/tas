@@ -12,7 +12,7 @@ const MobileMenu = () => {
   return (
     <>
       <div className="side-menu" onClick={handleShow}>
-        <i class="ri-menu-line"></i>
+        <i className="ri-menu-line"></i>
       </div>
       <Offcanvas show={show} onHide={handleClose} backdrop="static">
         <Offcanvas.Header closeButton>

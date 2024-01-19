@@ -50,7 +50,7 @@ const Footer = () => {
                       <h4>Quick Links</h4>
                       <ul>
                         {footerMenus.map((footerMenu, index) => (
-                          <FooterMenuItem data={footerMenu} index={index} />
+                          <FooterMenuItem data={footerMenu} key={index} />
                         ))}
                       </ul>
                     </div>
@@ -61,7 +61,7 @@ const Footer = () => {
                       <h4>Our Product</h4>
                       <ul>
                         {footerProducts.map((footerProduct, index) => (
-                          <FooterProduct data={footerProduct} index={index} />
+                          <FooterProduct data={footerProduct} key={index} />
                         ))}
                       </ul>
                     </div>
@@ -72,18 +72,18 @@ const Footer = () => {
                       <h4>Contact Us</h4>
                       <ul className="contact-info">
                         <li className="info address">
-                          <i class="ri-map-pin-2-line"></i>
+                          <i className="ri-map-pin-2-line"></i>
                           <p>
                             Aspen Marg, Maitighar, St. Xavier College Rd,
                             Kathmandu, Nepal – 44600
                           </p>
                         </li>
                         <li className="info number">
-                          <i class="ri-phone-line"></i>
+                          <i className="ri-phone-line"></i>
                           <p>01-5339555</p>
                         </li>
                         <li className="info email">
-                          <i class="ri-mail-line"></i>
+                          <i className="ri-mail-line"></i>
                           <p>info@tas.com.np</p>
                         </li>
                       </ul>

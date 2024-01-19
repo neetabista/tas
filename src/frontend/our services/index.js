@@ -2,29 +2,11 @@ import React from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 import { serverCard } from '../../data/data'
+import CustomBreadcrumb from '../../components/common/CustomBreadcrumb'
 const Services = () => {
   return (
     <>
-      <Container>
-        <div className="title__holder">
-          <div className="title__holder--title">
-            <h3>services</h3>
-            <div className="breadcrumbs">
-              <ul className="breadcrumbs__list">
-                <li className="breadcrumbs__item">
-                  <Link to="">Home</Link>
-                </li>
-                <li className="separator">
-                  <span></span>
-                </li>
-                <li className="breadcrumbs__item">
-                  <Link to="">services</Link>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </Container>
+      <CustomBreadcrumb title="services" subtitle="services" />
       <Container>
         <div className="services">
           <Row>
@@ -45,8 +27,8 @@ const Services = () => {
                   </div>
 
                   <div className="services__content">
-                    <h4>{card.title}</h4>
-                    <p>{card.description}</p>
+                    <h4 className='services__title'>{card.title}</h4>
+                    <p className='services__samary'>{card.description}</p>
                     <Link to="">
                       <div className="read-btn">Read More</div>
                     </Link>

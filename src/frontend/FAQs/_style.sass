@@ -11,15 +11,16 @@
     &:hover
         .accordion-button
             color: #dd3333
-            &::after
-                color: #dd3333 
-.accordion-button:not(.collapsed)
-    background-color: none !important
-    color: none !important
-    box-shadow: none !important
+             
+.accordion-body
+    color: #555
+    font-size: 14px
+    line-height: 24px
+
 .accordion-button
-    font-size: 18px
+    font-size: 16px
     font-weight: 700
+  
 .accordion-button:focus
     box-shadow: none
     border-color: none     
@@ -50,9 +51,13 @@
         z-index: 1
         font-weight: 800
         color: #eee
+        display: flex
+        justify-content: center
+        align-items: center
         position: relative
         text-align: center
-        display: inline-block
+        p
+            width: 70%
         @media (max-width: 990px)
             font-size: 22px
         @media (max-width: 430px)

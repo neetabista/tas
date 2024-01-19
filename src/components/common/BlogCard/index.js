@@ -2,10 +2,10 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import CustomButton from '../button/CustomButton'
 
-const BlogCard = ({ data, index }) => {
+const BlogCard = ({ data }) => {
   return (
     <>
-      <div className="blog__card" key={index}>
+      <div className="blog__card">
         <Link to={`/detail/${data.id}`}>
           <div
             className="blog__img"

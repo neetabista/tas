@@ -13,17 +13,17 @@ const TopPanel = () => {
             <ul className="social-icons">
               <li className="icon">
                 <Link to="">
-                  <i class="ri-facebook-fill"></i>
+                  <i className="ri-facebook-fill"></i>
                 </Link>
               </li>
               <li className="icon">
                 <Link to="">
-                  <i class="ri-twitter-line"></i>
+                  <i className="ri-twitter-line"></i>
                 </Link>
               </li>
               <li className="icon">
                 <Link to="">
-                  <i class="ri-instagram-line"></i>
+                  <i className="ri-instagram-line"></i>
                 </Link>
               </li>
             </ul>

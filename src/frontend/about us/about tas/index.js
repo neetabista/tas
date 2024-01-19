@@ -12,30 +12,12 @@ import 'swiper/css/navigation'
 
 // import required modules
 import { Navigation, Pagination } from 'swiper/modules'
+import CustomBreadcrumb from '../../../components/common/CustomBreadcrumb'
 
 const AboutTas = () => {
   return (
     <>
-      <Container>
-        <div className="title__holder">
-          <div className="title__holder--title">
-            <h3>About Us</h3>
-            <div className="breadcrumbs">
-              <ul className="breadcrumbs__list">
-                <li className="breadcrumbs__item">
-                  <Link to="">Home</Link>
-                </li>
-                <li className="separator">
-                  <span></span>
-                </li>
-                <li className="breadcrumbs__item">
-                  <Link to="">about tas</Link>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </Container>
+      <CustomBreadcrumb title="About TAS" subtitle="about tas" />
       <Container>
         <div className="tas">
           <Row>
@@ -124,7 +106,12 @@ const AboutTas = () => {
           </Row>
         </div>
       </Container>
-      <div className="testimonials">
+      <div
+        className="testimonials"
+        style={{
+          backgroundImage: "url('/images/testimonial-bg3.jpg')",
+        }}
+      >
         <Container>
           <Swiper
             slidesPerView={1}

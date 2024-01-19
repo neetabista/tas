@@ -4,30 +4,14 @@ import { Link } from 'react-router-dom'
 import CustomTitle from '../../../components/common/CustomTitle'
 import { distributors } from '../../../data/data'
 import { associations } from '../../../data/data'
+import CustomButton from '../../../components/common/button/CustomButton'
+import CustomBreadcrumb from '../../../components/common/CustomBreadcrumb'
 
 const OurAssociation = () => {
   return (
     <>
-      <Container>
-        <div className="title__holder">
-          <div className="title__holder--title">
-            <h3>Our Association</h3>
-            <div className="breadcrumbs">
-              <ul className="breadcrumbs__list">
-                <li className="breadcrumbs__item">
-                  <Link to="">Home</Link>
-                </li>
-                <li className="separator">
-                  <span></span>
-                </li>
-                <li className="breadcrumbs__item">
-                  <Link to="">Our Association</Link>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </Container>
+      <CustomBreadcrumb title="Our Association" subtitle="Our Association" />
+
       <Container>
         <div className="associations">
           <CustomTitle title="our associations" />

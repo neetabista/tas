@@ -19,7 +19,7 @@ const About = () => {
             </Col>
             <Col lg={6}>
               <div className="about__content">
-                <CustomTitle title="about us" />
+                <CustomTitle title="about  TAS" />
                 <p className="about__text">
                   Technical Associates Services (TAS) aim to provide cost
                   effective engineering solutions to people and industries in

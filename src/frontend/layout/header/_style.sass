@@ -1,6 +1,5 @@
 header
-  // position: absolute
-  // background-color: rgba(0,0,0,.8)
+ 
   border-bottom: none
   width: 100%
   z-index: 1000
@@ -69,20 +68,19 @@ header
     display: flex
     justify-content: space-between
     align-items: center
-    position: absolute
     top: 30px
     left: 0
     background-color: rgba(0,0,0,.8)
     z-index: 1000
     width: 100%
-    padding: 0 30px
-    margin:  0 auto
+    position: absolute
 
 
 
     .header__logo
       max-width: 75px
       height: 50px
+      margin-left: 30px
       img
         width: 100%
         height: 100%
@@ -117,12 +115,12 @@ header
       font-size: 24px
       @media ( max-width: 1130px )
         display: block
+        margin-right: 30px
              
 button
   &:hover
     background-color: unset !important
  
-// .Offcanvas-header
 .btn-close
   color: #ffffff !important  
 

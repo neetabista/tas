@@ -3,30 +3,13 @@ import BlogCard from '../../components/common/BlogCard'
 import { Container, Row, Col } from 'react-bootstrap'
 import { blogs } from '../../data/data'
 import { Link } from 'react-router-dom'
+import CustomBreadcrumb from '../../components/common/CustomBreadcrumb'
 
 const BlogAndNews = () => {
   return (
     <>
-      <Container>
-        <div className="title__holder">
-          <div className="title__holder--title">
-            <h3>blogs</h3>
-            <div className="breadcrumbs">
-              <ul className="breadcrumbs__list">
-                <li className="breadcrumbs__item">
-                  <Link to="">Home</Link>
-                </li>
-                <li className="separator">
-                  <span></span>
-                </li>
-                <li className="breadcrumbs__item">
-                  <Link to="">blogs</Link>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </Container>
+      <CustomBreadcrumb title="blogs" subtitle="blogs" />
+
       <Container>
         <div className="blogs">
           <Row>
