@@ -1,11 +1,17 @@
 import React from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
-
+import FooterMenuItem from '../../../components/frontend/layout/footer/FooterMenuItem'
+import { footerMenus } from '../../../data/data'
+import { footerProducts } from '../../../data/data'
+import FooterProduct from '../../../components/frontend/layout/footer/FooterProduct'
+import { footerData } from '../../../data/data'
+import CustomButton from '../../../components/common/button/CustomButton'
+import SendIcon from '../../../icons/SendIcon'
 const Footer = () => {
   return (
     <>
-      <div className="footer">
+      <footer>
         <Container>
           <div className="footer__content">
             <Row>
@@ -20,11 +26,21 @@ const Footer = () => {
                   </Link>
                   <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Distinctio, nostrum et quisquam quae, sapiente ab nobis
-                    laboriosam libero neque voluptate, labore accusamus
-                    accusantium necessitatibus exercitationem ipsum laborum ut
-                    officiis corrupti.
+                    Distinctio, nostrum et quisquam quae.
                   </p>
+                  <form>
+                    <input
+                      type="text"
+                      name="email"
+                      id="email"
+                      placeholder="Email address"
+                    />
+                    <Link to="">
+                      <div className="send-btn">
+                        <SendIcon style={{ fontSize: '16px' }} />
+                      </div>
+                    </Link>
+                  </form>
                 </div>
               </Col>
               <Col lg={8}>
@@ -33,15 +49,9 @@ const Footer = () => {
                     <div className="footer__links">
                       <h4>Quick Links</h4>
                       <ul>
-                        <li className="item">
-                          <Link to="">faqs</Link>
-                        </li>
-                        <li className="item">
-                          <Link to="">blog & news</Link>
-                        </li>
-                        <li className="item">
-                          <Link to="">company policy</Link>
-                        </li>
+                        {footerMenus.map((footerMenu, index) => (
+                          <FooterMenuItem data={footerMenu} index={index} />
+                        ))}
                       </ul>
                     </div>
                   </Col>
@@ -50,15 +60,9 @@ const Footer = () => {
                     <div className="footer__product">
                       <h4>Our Product</h4>
                       <ul>
-                        <li className="item">
-                          <Link to="">Thermax Boilers</Link>
-                        </li>
-                        <li className="item">
-                          <Link to="">Water Pumps</Link>
-                        </li>
-                        <li className="item">
-                          <Link to="">Compressed Air System</Link>
-                        </li>
+                        {footerProducts.map((footerProduct, index) => (
+                          <FooterProduct data={footerProduct} index={index} />
+                        ))}
                       </ul>
                     </div>
                   </Col>
@@ -93,12 +97,17 @@ const Footer = () => {
         <div className="footer__bottom">
           <Container>
             <div className="bottom-list">
-              <div className="bottom-item">Copyright &copy; 2023 TAS</div>
-              <div className="bottom-item">Technical Partner: Encode Tree</div>
+              <div className="footer__copyright">Copyright &copy; 2023 TAS</div>
+              <div className="footer__credit">
+                Designed & Developed By:
+                <Link to="https://infinityinfosys.com/" target="_blank">
+                  Infinity Infosys Pvt. Ltd.
+                </Link>
+              </div>
             </div>
           </Container>
         </div>
-      </div>
+      </footer>
     </>
   )
 }

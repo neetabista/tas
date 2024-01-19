@@ -12,6 +12,8 @@ import 'swiper/css/navigation'
 
 // import required modules
 import { Navigation, Autoplay } from 'swiper/modules'
+import CustomTitle from '../../../../components/common/CustomTitle'
+import BlogCard from '../../../../components/common/BlogCard'
 
 const Blog = () => {
   return (
@@ -21,7 +23,10 @@ const Blog = () => {
         style={{ backgroundImage: 'url("/images/map.png")' }}
       >
         <Container>
-          <h3 className="title">Thoughts & Experiments</h3>
+          <CustomTitle
+            title="Thoughts & Experiments"
+            customStyle={{ width: '300px' }}
+          />
 
           <div className="blog__list">
             <Swiper
@@ -50,33 +55,7 @@ const Blog = () => {
             >
               {blogs.map((blog, index) => (
                 <SwiperSlide>
-                  <div className="blog__card">
-                    <Link to={`/detail/${blog.id}`}>
-                      <div
-                        className="blog__img"
-                        style={{ backgroundImage: `url(${blog.image})` }}
-                      >
-                        <div className="time">
-                          <h4>{blog.day}</h4>
-                          <h5>{blog.month}</h5>
-                          <h5>{blog.year}</h5>
-                        </div>
-                      </div>
-                    </Link>
-                    <div className="blog__title--section">
-                      <p className="title-header">
-                        By <Link to="">Frenify</Link> -In{' '}
-                        <Link to="">Australia</Link>
-                      </p>
-
-                      <Link to={`/detail/${blog.id}`}>
-                        <div className="blog__title">{blog.title}</div>
-                      </Link>
-                      <Link to="">
-                        <CustomButton btnData="read more" />
-                      </Link>
-                    </div>
-                  </div>
+                  <BlogCard data={blog} index={index}/>
                 </SwiperSlide>
               ))}
             </Swiper>

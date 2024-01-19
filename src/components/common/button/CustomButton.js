@@ -1,9 +1,11 @@
 import React from 'react'
 
-const CustomButton = ({ btnData }) => {
+const CustomButton = ({ btnData, customStyle }) => {
   return (
     <>
-      <div className="custom-button">{btnData}</div>
+      <div className="custom-button" style={customStyle}>
+        {btnData}
+      </div>
     </>
   )
 }

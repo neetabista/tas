@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap')
 *
   margin: 0
   padding: 0
@@ -7,7 +7,7 @@
   text-decoration: none !important
   outline: none
   border: none
-  font-family: "Open Sans", sans-serif
+  font-family: 'Manrope', sans-serif
 .header__menu
       display: block
       @media ( max-width:1130px )
@@ -87,6 +87,7 @@
   color: #14141c 
   position: relative 
   margin-bottom: 2rem
+  text-transform: capitalize
   &::after
     content: ""
     position: absolute 
@@ -114,3 +115,72 @@
     --bs-btn-close-color: #fff
     --bs-btn-close-opacity: 0.5
     --bs-btn-close-bg: url(data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414z'/%3e%3c/svg%3e)
+
+.title__holder
+  margin: 2rem 0
+  .title__holder--title
+    padding: 3rem 0
+    position: relative
+    &::before
+      left: 0
+      position: absolute
+      content: ""
+      bottom: 13px
+      height: 6px
+      width: 150px
+      background-color: #eee
+      border-radius: 10px
+    &::after
+      left: 0
+      position: absolute
+      content: ""
+      bottom: 0
+      height: 6px
+      width: 70px
+      background-color: #eee  
+    h3
+      font-size: 42px
+      font-weight: 300
+      text-transform: capitalize
+    .breadcrumbs
+      ul
+        margin-bottom: 0
+        padding-left: 0
+      .breadcrumbs__list
+        display: flex
+        font-size: 14px
+        a
+          color:#666
+        .breadcrumbs__item
+          font-weight: 600
+          transition: 0.3s ease
+          text-transform: capitalize
+          &:hover
+            a
+              color: #dd3333
+        .separator
+          span
+            width: 33px
+            height: 24px
+            display: block
+            position: relative
+            &::before
+              width: 9px
+              height: 2px
+              display: block
+              content: ""
+              position: absolute
+              background-color: #ddd
+              left: 13px
+              top: 14px
+              transform: rotate(135deg)
+            &::after
+              width: 9px
+              height: 2px
+              display: block
+              content: ""
+              position: absolute
+              background-color: #ddd
+              left: 13px
+              top: 8px
+              transform: rotate(45deg)      

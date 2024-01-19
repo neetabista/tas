@@ -66,12 +66,7 @@ const Contact = () => {
             <Col lg={7}>
               <div className="contact__info--sec">
                 <h3>Contact Information</h3>
-                {/* <sapn className="icon-wrapper">
-                  <sapn className="icon">
-                    <i class="ri-map-pin-2-line"></i>
-                  </sapn>
-                  <span className="shape"></span>
-                </sapn> */}
+
                 <ul className="contact__info">
                   <li className="info address">
                     <i class="ri-map-pin-2-line"></i>

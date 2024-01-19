@@ -5,18 +5,22 @@ import CustomCard from '../../../../components/common/CustomCard/CustomCard'
 
 import { Container, Row, Col } from 'react-bootstrap'
 import CustomButton from '../../../../components/common/button/CustomButton'
+import CustomTitle from '../../../../components/common/CustomTitle'
 
 const Projects = () => {
   return (
     <>
       <div className="project">
         <div className="project__content">
-          <Container fluid style={{ padding: 0 }}>
-            <Row mx-0>
+          <Container fluid className="px-0">
+            <Row className="mx-0">
               <Col lg={4}>
                 <div className="project__left--content">
                   <div className="project__left__sticky--section">
-                    <h3 className="title">Our latest projects</h3>
+                    <CustomTitle
+                      title="Our latest products"
+                      customStyle={{ width: '300px' }}
+                    />
                     <p>
                       At Industify Company, we rely on honesty, discipline and
                       hard work and believe our success can be attributed to
@@ -32,17 +36,17 @@ const Projects = () => {
                     </p>
                     <div className="button">
                       <Link to="">
-                        <CustomButton btnData="view all projects" />
+                        <CustomButton btnData="view all product" />
                       </Link>
                     </div>
                   </div>
                 </div>
               </Col>
-              <Col lg={8} py-0>
+              <Col lg={8} className="px-0">
                 <div className="project__right--content">
                   {projects?.length > 0 &&
                     projects?.map((project, index) => (
-                      <CustomCard data={project} />
+                      <CustomCard data={project} index={index} />
                     ))}
                 </div>
               </Col>

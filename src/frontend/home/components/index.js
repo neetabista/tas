@@ -1,4 +1,4 @@
-import LatestProjects from './LatestProjects/Projects'
+import LatestProjects from './LatestProduct/Projects'
 import Blog from './blog/Blog'
 import Testimonial from './testimonial/Testimonial'
 import Header from '../../layout/header/Header'

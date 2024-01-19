@@ -1,6 +1,6 @@
 export const projects = [
   {
-    id: 1,
+    id: 2,
     title: 'Industify Gas and Oil Organization',
     summary:
       'We go beyond testing, inspecting and certifying products; we are a Total Quality Assurance provider to industries worldwide.…',
@@ -110,5 +110,240 @@ export const banners = [
     title: 'Small Projects & Maintenance',
     description:
       'Here at Industify, we take the same approach to green building that we take to every other aspect of our business.',
+  },
+]
+
+export const footerMenus = [
+  {
+    id: 1,
+    title: 'FAQs',
+    slug: '/faqs',
+  },
+  {
+    id: 2,
+    title: 'blog and news',
+    slug: '/blogs',
+  },
+  {
+    id: 3,
+    title: 'company policy',
+    slug: '/company-policy',
+  },
+  {
+    id: 4,
+    title: 'services',
+    slug: '/services',
+  },
+  {
+    id: 5,
+    title: 'contact us',
+    slug: '/contact-us',
+  },
+]
+
+export const footerProducts = [
+  {
+    id: 1,
+    title: 'Thermax Boilers',
+    sulg: '/thermax-boilers',
+  },
+  {
+    id: 2,
+    title: 'Water Pumps',
+    sulg: '/water-pumps',
+  },
+  {
+    id: 3,
+    title: 'Compressed Air System',
+    sulg: '/compressed-air-system',
+  },
+  {
+    id: 4,
+    title: 'Fire Fighting System',
+    sulg: '/fire-fighting-system',
+  },
+  {
+    id: 5,
+    title: 'Oxygen & Nitrogen Generators',
+    sulg: '/oxygen-and-nitrogen-generators',
+  },
+]
+
+export const footerData = [
+  {
+    description:
+      'Technical Associates Services (TAS) aim to provide cost effective engineering solutions to people and industries in Nepal.',
+    address:
+      'Aspen Marg, Maitighar, St. Xavier College Rd, Kathmandu, Nepal – 44600',
+    phoneNumber: '01-5339555',
+    email: 'info@tas.com.np',
+  },
+]
+
+export const testimonialsCards = [
+  {
+    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci nihil deleniti ad fugit ducimus quia rem maxime ipsum est culpa expedita aperiam omnis veritatis, error, eos facere minus debitis esse?',
+    image: '/images/banner-1.jpg',
+    name: 'David Warner',
+    post: 'marketing manager',
+  },
+  {
+    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci nihil deleniti ad fugit ducimus quia rem maxime ipsum est culpa expedita aperiam omnis veritatis, error, eos facere minus debitis esse?',
+    image: '/images/banner-1.jpg',
+    name: 'melinda',
+    post: 'marketing manager',
+  },
+  {
+    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci nihil deleniti ad fugit ducimus quia rem maxime ipsum est culpa expedita aperiam omnis veritatis, error, eos facere minus debitis esse?',
+    image: '/images/img-1.jpg',
+    name: 'David Warner',
+    post: 'marketing manager',
+  },
+  {
+    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci nihil deleniti ad fugit ducimus quia rem maxime ipsum est culpa expedita aperiam omnis veritatis, error, eos facere minus debitis esse?',
+    image: '/images/img-2.jpg',
+    name: 'David Warner',
+    post: 'marketing manager',
+  },
+]
+
+export const distributors = [
+  {
+    id: 1,
+    logo: '/images/Associations-Logo1.png',
+  },
+  {
+    id: 2,
+    logo: '/images/Associations-Logo2.png',
+  },
+  {
+    id: 3,
+    logo: '/images/Associations-Logo3.png',
+  },
+  {
+    id: 4,
+    logo: '/images/Associations-Logo4.png',
+  },
+
+  {
+    id: 5,
+    logo: '/images/Associations-Logo5.png',
+  },
+  {
+    id: 6,
+    logo: '/images/Associations-Logo6.png',
+  },
+  {
+    id: 7,
+    logo: '/images/Associations-Logo7.png',
+  },
+  {
+    id: 8,
+    logo: '/images/Associations-Logo8.png',
+  },
+
+  {
+    id: 9,
+    logo: '/images/Associations-Logo9.png',
+  },
+  {
+    id: 10,
+    logo: '/images/Associations-Logo10.png',
+  },
+  {
+    id: 11,
+    logo: '/images/Associations-Logo11.png',
+  },
+  {
+    id: 12,
+    logo: '/images/Associations-Logo12.png',
+  },
+
+  {
+    id: 13,
+    logo: '/images/Associations-Logo13.png',
+  },
+  {
+    id: 14,
+    logo: '/images/Associations-Logo14.png',
+  },
+  {
+    id: 15,
+    logo: '/images/Associations-Logo15.png',
+  },
+  {
+    id: 16,
+    logo: '/images/Associations-Logo16.png',
+  },
+]
+
+export const associations = [
+  {
+    id: 1,
+    logo: '/images/microlife-2.png',
+  },
+  {
+    id: 2,
+    logo: '/images/Philips-1-1.png',
+  },
+  {
+    id: 3,
+    logo: '/images/GE.png',
+  },
+  {
+    id: 4,
+    logo: '/images/microlife-2.png',
+  },
+  {
+    id: 5,
+    logo: '/images/3M-2.png',
+  },
+]
+
+export const faqsData = [
+  {
+    eventKey: 0,
+    title: 'TAS overview',
+    body: ' At Amwerk, we value a culture of collaboration and service. We’re passionate about serving our clients to the fullest, while continuously growing, learning, and innovating. With competencies across multiple industries, we offer our customers a more reliable supply chain and confidence in the long life of their program.',
+  },
+
+  {
+    eventKey: 1,
+    title: 'How do we manage quality assurance?',
+    body: ' At Amwerk, we value a culture of collaboration and service. We’re passionate about serving our clients to the fullest, while continuously growing, learning, and innovating. With competencies across multiple industries, we offer our customers a more reliable supply chain and confidence in the long life of their program.',
+  },
+  {
+    eventKey: 2,
+    title: 'How do we manage quality assurance?',
+    body: ' At Amwerk, we value a culture of collaboration and service. We’re passionate about serving our clients to the fullest, while continuously growing, learning, and innovating. With competencies across multiple industries, we offer our customers a more reliable supply chain and confidence in the long life of their program.',
+  },
+  {
+    eventKey: 3,
+    title: 'How do we manage quality assurance?',
+    body: ' At Amwerk, we value a culture of collaboration and service. We’re passionate about serving our clients to the fullest, while continuously growing, learning, and innovating. With competencies across multiple industries, we offer our customers a more reliable supply chain and confidence in the long life of their program.',
+  },
+]
+
+export const serverCard = [
+  {
+    id: 1,
+    image: '/images/img-2.jpg',
+    title: 'Alternate Energy',
+    description:
+      ' Alternate Energy Download Doc Download PDF Lorem ipsum dolor...',
+  },
+  {
+    id: 2,
+    image: '/images/img-4.jpg',
+    title: 'Alternate Energy',
+    description:
+      ' Alternate Energy Download Doc Download PDF Lorem ipsum dolor...',
+  },
+  {
+    id: 3,
+    image: '/images/img-6.jpg',
+    title: 'Alternate Energy',
+    description:
+      ' Alternate Energy Download Doc Download PDF Lorem ipsum dolor...',
   },
 ]

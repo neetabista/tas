@@ -19,8 +19,8 @@
       bottom: 0
       height: 6px
       width: 70px
-      background-color: #eee  
-      
+      background-color: #eee
+
     .breadcrumbs
       ul
         margin-bottom: 0
@@ -29,7 +29,7 @@
         display: flex
         font-size: 14px
         a
-          color:#666
+          color: #666
         .breadcrumbs__item
           font-weight: 600
           transition: 0.3s ease
@@ -61,8 +61,7 @@
               background-color: #ddd
               left: 13px
               top: 8px
-              transform: rotate(45deg)  
-
+              transform: rotate(45deg)
 
 .leftside
   .leftside__img
@@ -96,23 +95,46 @@
       font-size: 20px
       font-family: Lora
       font-weight: 400
-      border-radius: 5px    
+      border-radius: 5px
 
-   
-      
-      
 .rightside
-  .card
-    background-color: #111724
-    padding: 30px
-  
-   
-      
-
-   
-     
-        
-
-    
-      
-
+  background-color: #111724
+  padding: 1rem
+  h2
+    color: #eee
+    text-transform: capitalize
+    padding-bottom: 1rem
+    font-size: 24px
+  .customcard
+    border-bottom: 1px solid #979797
+    margin-bottom: 2rem
+    .customcard__content
+      display: flex
+      justify-content: space-between
+      align-items: center
+      gap: 20px
+      margin-bottom: 1rem
+      .customcard__image
+        width: 60px
+        height: 60px
+        object-fit: cover
+        border-radius: 4px
+      .customcard__title
+        & a
+          color: #eee
+        p
+          font-size: 14px
+          margin-bottom: 0
+          transition: 0.3s ease
+          &:hover
+            a
+              color: #dd3333
+            
+         
+      .date
+        color: #dd3333
+        font-size: 14px
+        i
+          padding-right:8px
+    &:last-child
+       border-bottom: 0   

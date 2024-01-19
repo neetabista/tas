@@ -82,18 +82,67 @@ const BlogDetails = () => {
           </Col>
           <Col lg={4}>
             <div className="rightside">
-              <div className="card">
-                <h2>related feed</h2>
-                <div className="card__content">
-                  <img
-                    className="card"
-                    src="/public/images/img-2.jpg"
-                    alt="blog"
-                  />
-                  <div className="card__title">
+              <h2>related feed</h2>
+
+              <div className="customcard">
+                <div className="customcard__content">
+                  <Link to="">
+                    <img
+                      className="customcard__image"
+                      src="/images/img-2.jpg"
+                      alt="blog"
+                    />
+                  </Link>
+                  <div className="customcard__title">
                     <p>
-                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                      Voluptate, rem voluptates.
+                      <Link to="">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      </Link>
+                    </p>
+                    <div className="date">
+                      <i class="ri-calendar-2-line"></i>
+                      <span>09 Oct, 2023</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="customcard">
+                <div className="customcard__content">
+                  <Link to="">
+                    <img
+                      className="customcard__image"
+                      src="/images/img-7.jpg"
+                      alt="blog"
+                    />
+                  </Link>
+                  <div className="customcard__title">
+                    <p>
+                      <Link to="">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      </Link>
+                    </p>
+                    <div className="date">
+                      <i class="ri-calendar-2-line"></i>
+                      <span>09 Oct, 2023</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="customcard">
+                <div className="customcard__content">
+                  <Link to="">
+                    <img
+                      className="customcard__image"
+                      src="/images/img-3.jpg"
+                      alt="blog"
+                    />
+                  </Link>
+                  <div className="customcard__title">
+                    <p>
+                      <Link to="">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      </Link>
                     </p>
                     <div className="date">
                       <i class="ri-calendar-2-line"></i>
@@ -109,5 +158,4 @@ const BlogDetails = () => {
     </>
   )
 }
-
 export default BlogDetails

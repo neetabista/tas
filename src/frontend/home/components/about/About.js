@@ -1,6 +1,8 @@
 import React from 'react'
 import CustomButton from '../../../../components/common/button/CustomButton'
 import { Container, Row, Col } from 'react-bootstrap'
+import CustomTitle from '../../../../components/common/CustomTitle'
+import { Link } from 'react-router-dom'
 
 const About = () => {
   return (
@@ -17,7 +19,7 @@ const About = () => {
             </Col>
             <Col lg={6}>
               <div className="about__content">
-                <h3 className="title">About Us</h3>
+                <CustomTitle title="about us" />
                 <p className="about__text">
                   Technical Associates Services (TAS) aim to provide cost
                   effective engineering solutions to people and industries in
@@ -34,7 +36,9 @@ const About = () => {
                   solutions, PSA type Oxygen & Nitrogen Generators, Modular
                   Operation Theatres, Fire Fighting Systems and Flowmeters.
                 </p>
-                <CustomButton btnData="Learn More" />
+                <Link to="">
+                  <CustomButton btnData="Learn More" />
+                </Link>
               </div>
             </Col>
           </Row>
