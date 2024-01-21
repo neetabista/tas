@@ -9,7 +9,8 @@ import OurAssociation from '../frontend/about us/our associations'
 import SisterConcern from '../frontend/about us/sister concern'
 import FAQs from '../frontend/FAQs'
 import Services from '../frontend/our services'
-import ServicesDetail from '../frontend/services details'
+import Solutions from '../frontend/solutions'
+import SolutionsDetails from '../frontend/solutions details'
 
 const PublicRouter = () => {
   return (
@@ -24,7 +25,8 @@ const PublicRouter = () => {
         <Route path="/sister-concern" element={<SisterConcern />} />
         <Route path="/faqs" element={<FAQs />} />
         <Route path="/services" element={<Services />} />
-        <Route path="/service-detail" element={<ServicesDetail />} />
+        <Route path="/solutions-details" element={<SolutionsDetails />} />
+        <Route path="/solution" element={<Solutions />} />
       </Routes>
     </>
   )

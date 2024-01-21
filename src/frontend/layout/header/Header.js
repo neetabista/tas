@@ -37,19 +37,7 @@ const Header = () => {
                 </MenuItem>
 
                 <MenuItem title="services" slug="/services" />
-                <MenuItem title="solution" slug="/">
-                  <ul className="sub-menu">
-                    <li className="sub-menu__item">
-                      <Link to="">Hospitality Solutions</Link>
-                    </li>
-                    <li className="sub-menu__item">
-                      <Link to="">Industrial Solutions</Link>
-                    </li>
-                    <li className="sub-menu__item">
-                      <Link to="">Residential Solutions</Link>
-                    </li>
-                  </ul>
-                </MenuItem>
+                <MenuItem title="solution" slug="/solution"></MenuItem>
 
                 <MenuItem title="our products" slug="/">
                   <ul className="sub-menu">

@@ -36,7 +36,7 @@ const About = () => {
                   solutions, PSA type Oxygen & Nitrogen Generators, Modular
                   Operation Theatres, Fire Fighting Systems and Flowmeters.
                 </p>
-                <Link to="">
+                <Link to="/about-us">
                   <CustomButton btnData="Learn More" />
                 </Link>
               </div>

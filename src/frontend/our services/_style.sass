@@ -1,52 +1,27 @@
 .services
-    margin: 4rem 0
+    background-color: #efefef
+    padding: 8rem 0
     .services__card
-        &:hover
-            .image-overlay
-                .overlay
-                    top: 0
+        background-color: #ffffff
+        border-radius: 5px
        
-            
-        .image-overlay
-            position: relative
-            overflow: hidden
-            .services__image
-                width: 100%
-                height: 230px
-                object-fit: cover
-            .overlay
-                background-color: rgba(231, 16, 16, 0.7)
-                width: 100%
-                height: 100%
-                position: absolute
-                left: 0
-                top: calc(100% - 5px)
-                transition: all 0.5s
-                display: flex
-                justify-content: center
-                align-items: center
-                a
-                    padding: .4rem .8rem
-                    border-radius: 2px
-                    background-color: #fff
-                    font-size: 24px
-                    i
-                        color:#dd3333
+        .services__image
+            width: 100%
+            height: 100%
+            object-fit: cover
+            border-radius: 5px 0 0 5px
+
         .services__content
-            padding: 1rem 0
+            padding: 1rem
+            & p
+                margin-bottom: 0px
+
+
+
             .services__title
-                text-transform: capitalize
                 font-size: 24px
-            .services__samary
+                text-transform: capitalize
+            .services__details
                 font-size: 14px
-                color: #666
-                line-height: 22px   
-            a
-                color: #000
-                transition: 0.3s ease
-                &:hover
-                    color: #dd3333
-                .read-btn
-                    font-weight: 600
-                    border-top: 1px solid #efefef
-                    padding-top: 1rem                  
+                color: #666   
+                   

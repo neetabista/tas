@@ -324,26 +324,174 @@ export const faqsData = [
   },
 ]
 
-export const serverCard = [
+export const solutionCard = [
   {
     id: 1,
     image: '/images/img-2.jpg',
-    title: 'Alternate Energy',
+    title: 'Hospitality Solutions',
     description:
       ' Alternate Energy Download Doc Download PDF Lorem ipsum dolor...',
   },
   {
     id: 2,
     image: '/images/img-4.jpg',
-    title: 'Alternate Energy',
+    title: 'Industrial Solutions',
     description:
       ' Alternate Energy Download Doc Download PDF Lorem ipsum dolor...',
   },
   {
     id: 3,
     image: '/images/img-6.jpg',
-    title: 'Alternate Energy',
+    title: 'Residential Solutions',
     description:
       ' Alternate Energy Download Doc Download PDF Lorem ipsum dolor...',
+  },
+]
+
+export const serviceCard = [
+  {
+    image: '/images/banner-3.jpg',
+    title: 'Annual Service Contract (ASC)',
+    description:
+      ' We have a team of highly trained and qualified engineers to take care of your services and maintenance needs for all our products. We offer packaged ASC, which includes Breakdown calls, regular maintenance and yearly overhauling.',
+  },
+  {
+    image: '/images/banner-1.jpg',
+    title: 'Opearation & Maintenance Contract (O&M)',
+    description:
+      'We offer operation & maintenance services for Medical Gas Pipeline Systems and PSA Type Oxygen Concentrators.',
+  },
+]
+
+export const solutionsData = [
+  {
+    id: 1,
+    itemName: 'Hotels',
+    itemList: [
+      {
+        id: 1,
+        listName: 'Central Water and Space Heating products & Systems',
+      },
+      {
+        id: 2,
+        listName:
+          'Pumps for Water Transfer, Submersible Pumps, Air conditioning Pumps, Hot water circulation pumps, Pressure Boosting pumps, Water Treatment pumps, gardening pumps, waste water pumps, rain water pumps.',
+      },
+      {
+        id: 3,
+        listName: 'Fire Fighting Systems',
+      },
+      {
+        id: 4,
+        listName: 'Water Treatment Systems.',
+      },
+      {
+        id: 5,
+        listName: 'Sewage and Waste Water Treatment.',
+      },
+      {
+        id: 6,
+        listName: 'Water & Oil Flow meters.',
+      },
+      {
+        id: 7,
+        listName: 'Swimming Pool Filters, Pumps and accessories.',
+      },
+      {
+        id: 8,
+        listName: 'Fountain & Water Features.',
+      },
+      {
+        id: 9,
+        listName: 'Sprinklers and Irrigation System.',
+      },
+    ],
+  },
+  {
+    id: 2,
+    itemName: 'Hospitals',
+    itemList: [
+      {
+        id: 1,
+        listName: 'Medical Gas Pipeline Systems',
+      },
+      {
+        id: 2,
+        listName: 'PSA Medical Oxygen Generators.',
+      },
+      {
+        id: 3,
+        listName: 'Modular Operation Theatres',
+      },
+      {
+        id: 4,
+        listName: 'Pneumatic Tube Systems.',
+      },
+      {
+        id: 5,
+        listName: 'Hospital Curtain Track Systems',
+      },
+      {
+        id: 6,
+        listName: 'Wall Guards and Corner Guards',
+      },
+      {
+        id: 7,
+        listName: 'Medical Waste Management',
+      },
+      {
+        id: 8,
+        listName: 'Central Water and Space Heating products & Systems',
+      },
+      {
+        id: 9,
+        listName:
+          'Pumps for Water Transfer, Submersible Pumps, Air conditioning Pumps, Hot water circulation pumps, Pressure Boosting pumps, Water Treatment pumps, gardening pumps, waste water pumps, rain water pumps.',
+      },
+      {
+        id: 10,
+        listName: 'Water Treatment Systems.',
+      },
+      {
+        id: 11,
+        listName: 'Sewage and Waste Water Treatment.',
+      },
+      {
+        id: 12,
+        listName: 'Swimming Pool Filters, Pumps and accessories.',
+      },
+      {
+        id: 13,
+        listName: 'Fountain & Water Features.',
+      },
+    ],
+  },
+  {
+    id: 3,
+    itemName: 'Fire Fighting Systems',
+    itemList: [
+      {
+        id: 1,
+        listName: 'Central Water and Space Heating products & Systems',
+      },
+      {
+        id: 2,
+        listName:
+          'Pumps for Water Transfer, Submersible Pumps, Air conditioning Pumps, Hot water circulation pumps, Pressure Boosting pumps, Water Treatment pumps, gardening pumps, waste water pumps, rain water pumps.',
+      },
+      {
+        id: 3,
+        listName: 'Fire Fighting Systems',
+      },
+      {
+        id: 4,
+        listName: 'Water Treatment Systems.',
+      },
+      {
+        id: 5,
+        listName: 'Sewage and Waste Water Treatment.',
+      },
+      
+    ],
   },
 ]
